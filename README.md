@@ -18,7 +18,7 @@ git clone https://github.com/nandinichhajed/Calorie-Calculator-in-Python-Django.
 **Get project forlder**
 
 ```bash
-cd Sending-Emails-with-Python-Django
+cd Calorie-Calculator-in-Python-Django
 ```
 
 **Create virtual Environment**
