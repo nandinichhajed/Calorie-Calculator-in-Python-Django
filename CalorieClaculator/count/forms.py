@@ -1,18 +1,18 @@
-from . models import *
 from django.forms import ModelForm
+from .models import *
 from django.contrib.auth.forms import UserCreationForm
 
-class FoodItemForm(ModelForm):
+class fooditemForm(ModelForm):
     class Meta:
-        model = FoodItem
-        fields = "__all__"
+        model=Fooditem
+        fields="__all__"
 
-class AddUserFoodItem(ModelForm):
+class addUserFooditem(ModelForm):
     class Meta:
-        model = UserFoodItem
-        fields = "__all__"
-
-class CreateUserFoodItem(UserCreationForm):
+        model=UserFooditem
+        fields="__all__"
+        
+class createUserForm(UserCreationForm):
     class Meta:
-        model = UserFoodItem
-        fields = ['name', 'email', 'password1', 'password2']
+        model=User
+        fields=['username','email','password1','password2']
