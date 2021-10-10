@@ -31,7 +31,7 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
-class FoodItem(models.Model):
+class Fooditem(models.Model):
     name = models.CharField(max_length=200)
     category = models.ManyToManyField(Category)
     carbohydrates = models.DecimalField(max_digits=5, decimal_places=2, default=2)
@@ -43,6 +43,6 @@ class FoodItem(models.Model):
     def __str__(self):
         return self.name
 
-class UserFoodItem(models.Model):
+class UserFooditem(models.Model):
     customer = models.ManyToManyField(Customer, blank=True)
-    fooditem = models.ManyToManyField(FoodItem)
+    fooditem = models.ManyToManyField(Fooditem)
