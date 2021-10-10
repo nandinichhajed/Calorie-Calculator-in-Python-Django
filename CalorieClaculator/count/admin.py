@@ -1,14 +1,15 @@
 from django.contrib import admin
-from . models import *
-# Register your models here.
+from .models import *
 
-class FoodAdmin(admin.ModelAdmin):
+# Now, Register the models here.
+
+class foodAdmin(admin.ModelAdmin):
     class Meta:
-        model = FoodItem
-    list_display = ['name']
-    list_filter = ['name']
+        model=Fooditem
+    list_display=['name']
+    list_filter=['name']
 
 admin.site.register(Customer)
-admin.site.register(UserFoodItem)
+admin.site.register(UserFooditem)
 admin.site.register(Category)
-admin.site.register(FoodItem,FoodAdmin)
+admin.site.register(Fooditem,foodAdmin)
