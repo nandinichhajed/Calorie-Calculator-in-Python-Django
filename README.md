@@ -15,7 +15,7 @@ The calorie counter app is a great way to keep track of all the calories you are
 git clone https://github.com/nandinichhajed/Calorie-Calculator-in-Python-Django.git
 ```
 
-**Get project forlder**
+**Get project folder**
 
 ```bash
 cd Calorie-Calculator-in-Python-Django
