@@ -18,7 +18,7 @@ git clone https://github.com/nandinichhajed/Calorie-Calculator-in-Python-Django.
 **Get project folder**
 
 ```bash
-cd Calorie-Calculator-in-Python-Django
+cd .\CalorieClaculator\
 ```
 
 **Create virtual Environment**
